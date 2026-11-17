@@ -11,10 +11,17 @@ pre-registered, out-of-sample tests of three famous claims:
    most recent pulse ~7 Ma (Rampino, Caldeira & Zhu 2021, Historical Biology;
    Geoscience Frontiers). Plan: [PREREG-3.md](PREREG-3.md).
 
-Status (2026-11-17): **all three pre-registered; results pending.** Each plan, its
+Status (2026-11-17): **test 1 is done; tests 2 and 3 are queued.** Each plan, its
 decision rule and our probability for each outcome were committed before any data
-were analysed. Results will be added here when the jobs finish. They will be
-published whichever way they come out.
+were analysed, and every result is published whichever way it comes out.
+
+**Result 1 ([RESULTS-1.md](RESULTS-1.md)):** the published 27.16-Myr ephemeris lines up
+with the 2026 PBDB marine extinction record at stage resolution (r = 0.24, p = 0.021,
+fitted phase 9.51 Ma), but only because of the Big Five mass extinctions it was fitted
+to. Without those six stages: r = 0.12, p = 0.17. The record's strongest periodicity is
+~38 Myr. Pre-registered verdict: **RESTS_ON_MASS_EXTINCTIONS**, i.e. no detectable
+27-Myr rhythm in background extinction. Part C (Fan et al. 2020) could not be run: the
+archive holds the inputs to their optimisation, not the dated species ranges.
 
 ## Why now
 
@@ -36,6 +43,8 @@ published whichever way they come out.
 | File | What it does |
 |---|---|
 | `PREREG.md` | 27-Myr test: hypotheses, tests, sanity gate, our priors (P1-P9), part C for Fan et al. |
+| `PRE-RESULT-NOTE-1.md`, `grade_cycle1.py` | The mechanical reading of test 1, published before its result |
+| `RESULTS-1.md`, `results/prereg1/` | Test 1: graded result, per-stage series, periodogram, provenance |
 | `PREREG-2.md` | 62-Myr test: hypotheses, sanity gate, our priors (Q1-Q9) |
 | `PREREG-3.md` | Land-tetrapod 27.5-Myr test: hypotheses, leave-events-out test, our priors (T1-T11) |
 | `cycle.py` | GTS2020 stage table, binning, Alroy three-timer and Foote rates, matched-filter test of a fixed ephemeris with AR(1) and random-phase nulls, Lomb-Scargle, event test, timescale jitter |
@@ -43,7 +52,7 @@ published whichever way they come out.
 | `tetra.py` | Rampino et al. ephemeris, pulses and events, event-stage mapping, the PREREG-3 analysis |
 | `job.py`, `job62.py` | Download PBDB marine invertebrate genus occurrences and run tests 1 and 2 end to end |
 | `job_tetra.py` | Downloads PBDB terrestrial tetrapod genus occurrences and runs test 3 end to end |
-| `test_cycle.py`, `test_cycle62.py`, `test_tetra.py` | Offline unit tests (`python -m unittest -v test_cycle test_cycle62 test_tetra`) |
+| `test_cycle.py`, `test_cycle62.py`, `test_tetra.py`, `test_grade_cycle1.py` | Offline unit tests (`python -m unittest -v test_cycle test_cycle62 test_tetra test_grade_cycle1`) |
 
 Run it yourself: `pip install numpy && python -m unittest -v test_cycle test_cycle62 test_tetra && python job.py --data-dir data --out-dir out && python job62.py --data-dir data --out-dir out && python job_tetra.py --data-dir data --out-dir out`.
 
@@ -61,7 +70,7 @@ Run it yourself: `pip install numpy && python -m unittest -v test_cycle test_cyc
 
 ## Disclosure and licence
 
-Made with AI agents working in MV2's name. Every number will be produced by the
+Made with AI agents working in MV2's name. Every number is produced by the
 code in this repository from public data. Code: Apache-2.0. Text: CC BY 4.0.
 
 MV2, Munim, Inc., mv2@munimtech.com
