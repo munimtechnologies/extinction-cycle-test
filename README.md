@@ -13,7 +13,9 @@ pre-registered, out-of-sample tests of three famous claims:
 
 Status (2026-11-17): **test 1 is done; tests 2 and 3 are queued.** Each plan, its
 decision rule and our probability for each outcome were committed before any data
-were analysed, and every result is published whichever way it comes out.
+were analysed, and every result is published whichever way it comes out. The
+graders for tests 2 and 3 (`grade_cycle2.py`, `grade_tetra.py`) were published
+before their jobs produced any output.
 
 **Result 1 ([RESULTS-1.md](RESULTS-1.md)):** the published 27.16-Myr ephemeris lines up
 with the 2026 PBDB marine extinction record at stage resolution (r = 0.24, p = 0.021,
@@ -34,7 +36,8 @@ archive holds the inputs to their optimisation, not the dated species ranges.
   barely resolve a 27-Myr period. We use single stages (~4-5 Myr).
 - The land-tetrapod claim rests on a list of ten event ages. We found no test of
   it on an occurrence-based extinction-rate series, and none that leaves out the
-  events the cycle was fitted to.
+  events the cycle was fitted to (searches rechecked 2026-11-17: the published
+  critique, Omerbashich 2021, and the reply both work on the event ages only).
 - Fan et al. (Science 2020) published an independent Paleozoic record at
   ~26-kyr resolution (CC0). We found no published periodicity test on it.
 
@@ -46,13 +49,15 @@ archive holds the inputs to their optimisation, not the dated species ranges.
 | `PRE-RESULT-NOTE-1.md`, `grade_cycle1.py` | The mechanical reading of test 1, published before its result |
 | `RESULTS-1.md`, `results/prereg1/` | Test 1: graded result, per-stage series, periodogram, provenance |
 | `PREREG-2.md` | 62-Myr test: hypotheses, sanity gate, our priors (Q1-Q9) |
-| `PREREG-3.md` | Land-tetrapod 27.5-Myr test: hypotheses, leave-events-out test, our priors (T1-T11) |
+| `PRE-RESULT-NOTE-2.md`, `grade_cycle2.py` | The mechanical reading of test 2, published before its result (discloses what test 1's public series already reveal) |
+| `PREREG-3.md`, `PREREG-3-AMENDMENT-1.md` | Land-tetrapod 27.5-Myr test: hypotheses, leave-events-out test, our priors (T1-T11); the corrected PBDB environment code |
+| `PRE-RESULT-NOTE-3.md`, `grade_tetra.py` | The mechanical reading of test 3, published before its result |
 | `cycle.py` | GTS2020 stage table, binning, Alroy three-timer and Foote rates, matched-filter test of a fixed ephemeris with AR(1) and random-phase nulls, Lomb-Scargle, event test, timescale jitter |
 | `cycle62.py` | Range-through richness, cubic-detrended matched filter and periodogram, declining-phase contrast |
 | `tetra.py` | Rampino et al. ephemeris, pulses and events, event-stage mapping, the PREREG-3 analysis |
 | `job.py`, `job62.py` | Download PBDB marine invertebrate genus occurrences and run tests 1 and 2 end to end |
 | `job_tetra.py` | Downloads PBDB terrestrial tetrapod genus occurrences and runs test 3 end to end |
-| `test_cycle.py`, `test_cycle62.py`, `test_tetra.py`, `test_grade_cycle1.py` | Offline unit tests (`python -m unittest -v test_cycle test_cycle62 test_tetra test_grade_cycle1`) |
+| `test_cycle.py`, `test_cycle62.py`, `test_tetra.py`, `test_grade_cycle1.py`, `test_grade_cycle2.py`, `test_grade_tetra.py` | Offline unit tests (`python -m unittest -v test_cycle test_cycle62 test_tetra test_grade_cycle1 test_grade_cycle2 test_grade_tetra`) |
 
 Run it yourself: `pip install numpy && python -m unittest -v test_cycle test_cycle62 test_tetra && python job.py --data-dir data --out-dir out && python job62.py --data-dir data --out-dir out && python job_tetra.py --data-dir data --out-dir out`.
 
