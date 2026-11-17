@@ -7,6 +7,12 @@ Historical Biology 33:3084; Geoscience Frontiers 12:101245).
 Pure functions (no network); job_tetra.py does the downloads. The statistics
 are the ones registered for marine extinction in PREREG-1 (cycle.py).
 Made with AI agents working in MV2's name.
+
+Amendment 1 (2026-11-17, before any tetrapod data were downloaded): the
+registered query value envtype=terr is rejected by the PBDB API ("bad value
+'terr' for parameter 'envtype'", zero records). The API's code for "Any
+terrestrial environment" is envtype=terrestrial, which is used below. See
+PREREG-3-AMENDMENT-1.md.
 """
 import numpy as np
 
@@ -42,7 +48,7 @@ MIN_BINS = 40               # sanity: bins with a defined rate in the window
 MIN_RUN = 12                # below this many bins nothing is computed
 
 PBDB = "https://paleobiodb.org/data1.2/occs/list.csv"
-COMMON = "envtype=terr&idreso=genus&idqual=genus_certain&pres=regular&show=class"
+COMMON = "envtype=terrestrial&idreso=genus&idqual=genus_certain&pres=regular&show=class"
 QUERIES = {
     "tetra_nonmammal": f"{PBDB}?base_name=Tetrapoda%5EMammalia&{COMMON}",
     "tetra_mammalia": f"{PBDB}?base_name=Mammalia&{COMMON}",

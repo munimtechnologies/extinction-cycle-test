@@ -25,7 +25,10 @@ import numpy as np
 import cycle
 import tetra
 
-UA = "MV2-extinction-cycle/0.3 (Munim, Inc.; mv2@munimtech.com)"
+UA = "MV2-extinction-cycle/0.3.1 (Munim, Inc.; mv2@munimtech.com)"
+AMENDMENT = ("PREREG-3-AMENDMENT-1.md: envtype=terr (rejected by the PBDB API) "
+             "replaced by envtype=terrestrial ('Any terrestrial environment') "
+             "before any tetrapod data were downloaded")
 
 
 def now():
@@ -43,7 +46,7 @@ def md5(path):
 def fetch(url, dest, timeout=1800, tries=3):
     if os.path.exists(dest) and os.path.getsize(dest) > 0:
         return "cached"
-    tmp = dest + ".part"
+    tmp = f"{dest}.part{os.getpid()}"
     last = ""
     for k in range(tries):
         try:
@@ -71,7 +74,7 @@ def get_data(data_dir, prov):
                 head = f.readline()
             if "occurrence_no" not in head:
                 os.remove(dest)
-                raise RuntimeError("unexpected header: " + head[:300])
+                raise RuntimeError("unexpected header (PBDB warning?): " + head[:300])
             prov[label] = {"url": url, "status": how, "bytes": os.path.getsize(dest),
                            "md5": md5(dest),
                            "file_mtime_utc": dt.datetime.fromtimestamp(
@@ -101,9 +104,9 @@ def main():
     os.makedirs(args.out_dir, exist_ok=True)
     rng = np.random.default_rng(args.seed)
     prov = {"started_utc": now(), "pbdb": {}, "queries": tetra.QUERIES,
-            "n_surrogates": args.n_sur, "seed": args.seed}
-    res = {"prereg": "PREREG-3.md (extinction-cycle-test)", "status": "ok",
-           "ephemeris": tetra.RCZ2021}
+            "n_surrogates": args.n_sur, "seed": args.seed, "amendment": AMENDMENT}
+    res = {"prereg": "PREREG-3.md + PREREG-3-AMENDMENT-1.md (extinction-cycle-test)",
+           "status": "ok", "ephemeris": tetra.RCZ2021}
 
     paths = get_data(args.data_dir, prov["pbdb"])
     if set(paths) != set(tetra.QUERIES):

@@ -42,8 +42,10 @@ class EventsAndPhase(unittest.TestCase):
         self.assertTrue(0.25 < r < 0.45, r)
 
     def test_queries(self):
+        # Amendment 1: PBDB rejects envtype=terr; 'terrestrial' = any terrestrial env.
         for url in tetra.QUERIES.values():
-            self.assertIn("envtype=terr", url)
+            self.assertIn("envtype=terrestrial&", url)
+            self.assertNotIn("envtype=terr&", url)
             self.assertIn("idreso=genus", url)
             self.assertIn("show=class", url)
         self.assertIn("Tetrapoda%5EMammalia", tetra.QUERIES["tetra_nonmammal"])
