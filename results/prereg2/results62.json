@@ -1,0 +1,401 @@
+{
+ "prereg": "PREREG-2.md (extinction-cycle-test)",
+ "status": "ok",
+ "sanity": {
+  "checks": {
+   "induan_lt_changhsingian": true,
+   "danian_lt_maastrichtian": true,
+   "rhuddanian_lt_katian": true
+  },
+  "passed": true
+ },
+ "window_bins": [
+  "Messinian",
+  "Tortonian",
+  "Serravallian",
+  "Langhian",
+  "Burdigalian",
+  "Aquitanian",
+  "Chattian",
+  "Rupelian",
+  "Priabonian",
+  "Bartonian",
+  "Lutetian",
+  "Ypresian",
+  "Thanetian",
+  "Selandian",
+  "Danian",
+  "Maastrichtian",
+  "Campanian",
+  "Santonian",
+  "Coniacian",
+  "Turonian",
+  "Cenomanian",
+  "Albian",
+  "Aptian",
+  "Barremian",
+  "Hauterivian",
+  "Valanginian",
+  "Berriasian",
+  "Tithonian",
+  "Kimmeridgian",
+  "Oxfordian",
+  "Callovian",
+  "Bathonian",
+  "Bajocian",
+  "Aalenian",
+  "Toarcian",
+  "Pliensbachian",
+  "Sinemurian",
+  "Hettangian",
+  "Rhaetian",
+  "Norian",
+  "Carnian",
+  "Ladinian",
+  "Anisian",
+  "Olenekian",
+  "Induan",
+  "Changhsingian",
+  "Wuchiapingian",
+  "Capitanian",
+  "Wordian",
+  "Roadian",
+  "Kungurian",
+  "Artinskian",
+  "Sakmarian",
+  "Asselian",
+  "Gzhelian",
+  "Kasimovian",
+  "Moscovian",
+  "Bashkirian",
+  "Serpukhovian",
+  "Visean",
+  "Tournaisian",
+  "Famennian",
+  "Frasnian",
+  "Givetian",
+  "Eifelian",
+  "Emsian",
+  "Pragian",
+  "Lochkovian",
+  "Pridoli",
+  "Ludfordian",
+  "Gorstian",
+  "Homerian",
+  "Sheinwoodian",
+  "Telychian",
+  "Aeronian",
+  "Rhuddanian",
+  "Hirnantian",
+  "Katian",
+  "Sandbian",
+  "Darriwilian",
+  "Dapingian",
+  "Floian",
+  "Tremadocian",
+  "Stage 10",
+  "Jiangshanian",
+  "Paibian",
+  "Guzhangian",
+  "Drumian",
+  "Wuliuan",
+  "Stage 4",
+  "Stage 3"
+ ],
+ "H6_range_through": {
+  "n": 91,
+  "r": 0.5820223992014137,
+  "lag1": 0.6005442019778943,
+  "p_ar1": 4.999750012499375e-05,
+  "p_phase": 0.08519574021298935,
+  "fit_amplitude": 188.00068685502413,
+  "fit_tmax_ma": 30.40208738744626,
+  "phase_offset_myr": 2.602087387446261,
+  "detrend_deg": 3
+ },
+ "H6_periodogram": {
+  "band": [
+   58.0,
+   66.0
+  ],
+  "band_max_power": 18.42818632658728,
+  "p_band_ar1": 4.999750012499375e-05,
+  "global_peak_period_myr": 60.60606060606049,
+  "global_peak_in_band": true,
+  "top_peaks": [
+   {
+    "period_myr": 60.60606060606049,
+    "power": 18.428031032799307
+   },
+   {
+    "period_myr": 158.73015873015865,
+    "power": 4.212654629934597
+   },
+   {
+    "period_myr": 24.27184466019412,
+    "power": 3.936716794516641
+   },
+   {
+    "period_myr": 84.03361344537802,
+    "power": 3.823170905635439
+   },
+   {
+    "period_myr": 27.247956403269697,
+    "power": 3.449687344330859
+   },
+   {
+    "period_myr": 37.174721189591,
+    "power": 2.9777958318520663
+   },
+   {
+    "period_myr": 47.84688995215301,
+    "power": 2.749679532546872
+   },
+   {
+    "period_myr": 40.650406504064954,
+    "power": 1.9668763417554938
+   }
+  ]
+ },
+ "H6_jitter": {
+  "r_p05": 0.5660646336373713,
+  "r_p50": 0.5794914449849267,
+  "r_p95": 0.5940641782306328,
+  "frac_r_pos": 1.0
+ },
+ "H6_quadratic_detrend": {
+  "n": 91,
+  "r": 0.4151867198346156,
+  "lag1": 0.8001379653135084,
+  "p_ar1": 0.0012499375031248437,
+  "p_phase": 0.07794610269486525,
+  "fit_amplitude": 187.31789558982828,
+  "fit_tmax_ma": 30.240673023246714,
+  "phase_offset_myr": 2.440673023246717,
+  "detrend_deg": 2
+ },
+ "short_lived": {
+  "n": 91,
+  "r": 0.581942353825762,
+  "lag1": 0.6173879501904953,
+  "p_ar1": 9.99950002499875e-05,
+  "p_phase": 0.0191990400479976,
+  "fit_amplitude": 164.68620652029344,
+  "fit_tmax_ma": 28.378066081704812,
+  "phase_offset_myr": 0.5780660817048116,
+  "detrend_deg": 3
+ },
+ "sampled_in_bin": {
+  "n": 91,
+  "r": 0.46789114613246224,
+  "lag1": 0.40754191429966363,
+  "p_ar1": 0.00024998750062496874,
+  "p_phase": 0.10324483775811209,
+  "fit_amplitude": 184.13474998397746,
+  "fit_tmax_ma": 30.998055606622952,
+  "phase_offset_myr": 3.198055606622951,
+  "detrend_deg": 3
+ },
+ "log_collections": {
+  "n": 91,
+  "r": 0.3076025875154726,
+  "lag1": 0.4589164937623342,
+  "p_ar1": 0.015399230038498074,
+  "p_phase": 0.021948902554872255,
+  "fit_amplitude": 0.3002655899314275,
+  "fit_tmax_ma": 27.123581627605923,
+  "phase_offset_myr": 0.6764183723940782,
+  "detrend_deg": 3
+ },
+ "short_lived_periodogram": {
+  "band": [
+   58.0,
+   66.0
+  ],
+  "band_max_power": 15.097044186363222,
+  "p_band_ar1": 0.000999950002499875,
+  "global_peak_period_myr": 61.72839506172828,
+  "global_peak_in_band": true,
+  "top_peaks": [
+   {
+    "period_myr": 61.72839506172828,
+    "power": 15.096713447320349
+   },
+   {
+    "period_myr": 90.09009009008996,
+    "power": 7.413711317384398
+   },
+   {
+    "period_myr": 73.52941176470577,
+    "power": 4.227942280074053
+   },
+   {
+    "period_myr": 142.85714285714275,
+    "power": 2.9424595762683725
+   },
+   {
+    "period_myr": 113.63636363636351,
+    "power": 2.8617689630907934
+   },
+   {
+    "period_myr": 24.21307506053263,
+    "power": 2.605509924639032
+   },
+   {
+    "period_myr": 27.39726027397254,
+    "power": 2.4418997295380915
+   },
+   {
+    "period_myr": 36.90036900368996,
+    "power": 2.3714429729917197
+   }
+  ]
+ },
+ "H7_mu3t_declining": {
+  "n": 83,
+  "n_declining": 50,
+  "diff_normal_scores": 0.5237077018670315,
+  "p_random_phase": 0.033948302584870756
+ },
+ "partA2_mb_events": [
+  {
+   "event": "End-Maastrichtian",
+   "age_gts2012": 66.0,
+   "age_gts2020": 66.0,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Rhaetian event",
+   "age_gts2012": 201.3,
+   "age_gts2020": 201.4,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Changhsingian event",
+   "age_gts2012": 252.2,
+   "age_gts2020": 251.902,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Late Frasnian event",
+   "age_gts2012": 372.2,
+   "age_gts2020": 372.15,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Late Hirnantian event",
+   "age_gts2012": 443.8,
+   "age_gts2020": 443.1,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Katian/Hirnantian event",
+   "age_gts2012": 445.2,
+   "age_gts2020": 445.2,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Pliocene events",
+   "age_gts2012": 2.59,
+   "age_gts2020": 2.58,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Late Eocene",
+   "age_gts2012": 33.9,
+   "age_gts2020": 33.9,
+   "declining_2012": false,
+   "declining_2020": false
+  },
+  {
+   "event": "Late Cenomanian event",
+   "age_gts2012": 93.9,
+   "age_gts2020": 93.9,
+   "declining_2012": false,
+   "declining_2020": false
+  },
+  {
+   "event": "Late Tithonian",
+   "age_gts2012": 145.0,
+   "age_gts2020": 143.1,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Early Toarcian event",
+   "age_gts2012": 182.0,
+   "age_gts2020": 183.0,
+   "declining_2012": false,
+   "declining_2020": true
+  },
+  {
+   "event": "Capitanian event",
+   "age_gts2012": 259.8,
+   "age_gts2020": 259.857,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Mid-Serpukhovian event",
+   "age_gts2012": 327.05,
+   "age_gts2020": 326.85,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Late Famennian events",
+   "age_gts2012": 358.9,
+   "age_gts2020": 358.86,
+   "declining_2012": false,
+   "declining_2020": false
+  },
+  {
+   "event": "Late Givetian events",
+   "age_gts2012": 382.7,
+   "age_gts2020": 382.31,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Middle Miocene",
+   "age_gts2012": 11.63,
+   "age_gts2020": 11.63,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Spathian",
+   "age_gts2012": 247.1,
+   "age_gts2020": 247.0,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Late Moscovian",
+   "age_gts2012": 307.0,
+   "age_gts2020": 307.0,
+   "declining_2012": true,
+   "declining_2020": true
+  },
+  {
+   "event": "Mid-Caradocian",
+   "age_gts2012": 452.14,
+   "age_gts2020": 451.9,
+   "declining_2012": true,
+   "declining_2020": true
+  }
+ ],
+ "partA2_counts": {
+  "gts2012": 15,
+  "gts2020": 16,
+  "n": 19
+ },
+ "decision_H6": "SUPPORTED"
+}

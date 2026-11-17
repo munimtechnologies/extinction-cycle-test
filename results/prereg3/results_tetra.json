@@ -1,0 +1,565 @@
+{
+ "prereg": "PREREG-3.md + PREREG-3-AMENDMENT-1.md (extinction-cycle-test)",
+ "status": "ok",
+ "ephemeris": {
+  "period": 27.5,
+  "t0": 7.0,
+  "source": "Rampino, Caldeira & Zhu 2021, Geoscience Frontiers 12:101245 (27.5-Myr pulse, most recent ~7 Ma) and Historical Biology 33:3084 (27.5-Myr cycle in non-marine tetrapod extinctions)"
+ },
+ "partA_events": [
+  {
+   "event": "Late Miocene",
+   "age_ma": 7.25,
+   "offset_myr": 0.25,
+   "within_3": true
+  },
+  {
+   "event": "Eocene-Oligocene",
+   "age_ma": 33.9,
+   "offset_myr": 0.6000000000000014,
+   "within_3": true
+  },
+  {
+   "event": "Cretaceous-Paleogene",
+   "age_ma": 66.0,
+   "offset_myr": 4.0,
+   "within_3": false
+  },
+  {
+   "event": "Jurassic-Cretaceous",
+   "age_ma": 143.1,
+   "offset_myr": 1.4000000000000057,
+   "within_3": true
+  },
+  {
+   "event": "Triassic-Jurassic",
+   "age_ma": 201.4,
+   "offset_myr": 1.9000000000000057,
+   "within_3": true
+  },
+  {
+   "event": "mid-Norian",
+   "age_ma": 215.0,
+   "offset_myr": 12.0,
+   "within_3": false
+  },
+  {
+   "event": "Carnian-Norian",
+   "age_ma": 227.3,
+   "offset_myr": 0.30000000000001137,
+   "within_3": true
+  },
+  {
+   "event": "Permian-Triassic",
+   "age_ma": 251.9,
+   "offset_myr": 2.6000000000000227,
+   "within_3": true
+  },
+  {
+   "event": "end-Guadalupian",
+   "age_ma": 259.8,
+   "offset_myr": 5.300000000000011,
+   "within_3": false
+  }
+ ],
+ "partA_pulse_phase": {
+  "t0_ma": 7.477352641576054,
+  "R": 0.3478702644357501
+ },
+ "partA_event_phase": {
+  "t0_ma": 7.664322776445662,
+  "R": 0.642217503571673
+ },
+ "primary": {
+  "window": [
+   2.5,
+   300.0
+  ],
+  "n_bins": 38,
+  "window_bins": [
+   "Gzhelian",
+   "Asselian",
+   "Sakmarian",
+   "Capitanian",
+   "Ladinian",
+   "Carnian",
+   "Norian",
+   "Rhaetian",
+   "Hettangian",
+   "Callovian",
+   "Oxfordian",
+   "Kimmeridgian",
+   "Tithonian",
+   "Berriasian",
+   "Valanginian",
+   "Hauterivian",
+   "Barremian",
+   "Aptian",
+   "Albian",
+   "Santonian",
+   "Campanian",
+   "Maastrichtian",
+   "Danian",
+   "Selandian",
+   "Thanetian",
+   "Ypresian",
+   "Lutetian",
+   "Bartonian",
+   "Priabonian",
+   "Rupelian",
+   "Chattian",
+   "Aquitanian",
+   "Burdigalian",
+   "Langhian",
+   "Serravallian",
+   "Tortonian",
+   "Messinian",
+   "Zanclean"
+  ],
+  "sanity": {
+   "checks": {
+    "maastrichtian_top_quartile": true,
+    "enough_bins": false
+   },
+   "passed": false
+  },
+  "H_rcz": {
+   "n": 38,
+   "r": 0.08292414545224269,
+   "lag1": -0.07571435247944215,
+   "p_ar1": 0.3064846757662117,
+   "p_phase": 0.343982800859957,
+   "fit_amplitude": 0.17385143431355585,
+   "fit_tmax_ma": 2.0787364897258667,
+   "phase_offset_myr": 4.921263510274134
+  },
+  "leave_events_out": {
+   "n": 30,
+   "r": -0.17824492632582664,
+   "lag1": -0.21514206458359483,
+   "p_ar1": 0.8374581270936453,
+   "p_phase": 0.6952152392380381,
+   "fit_amplitude": 0.3410379392840688,
+   "fit_tmax_ma": 24.587488720230116,
+   "phase_offset_myr": 9.912511279769884,
+   "dropped_bins": [
+    "Capitanian",
+    "Carnian",
+    "Norian",
+    "Rhaetian",
+    "Tithonian",
+    "Maastrichtian",
+    "Priabonian",
+    "Tortonian"
+   ]
+  },
+  "H_mb2014": {
+   "n": 38,
+   "r": 0.055764432823074486,
+   "lag1": -0.07571435247944215,
+   "p_ar1": 0.3669816509174541,
+   "p_phase": 0.3802809859507025,
+   "fit_amplitude": 0.14216728343443236,
+   "fit_tmax_ma": 4.3659716410133855,
+   "phase_offset_myr": 5.134028358986614
+  },
+  "H_rcz_ranks": {
+   "n": 38,
+   "r": 0.09892205799528284,
+   "lag1": -0.12744392833852608,
+   "p_ar1": 0.263936803159842,
+   "p_phase": 0.26688665566721664,
+   "fit_amplitude": 0.18989575276674517,
+   "fit_tmax_ma": 3.272953976279329,
+   "phase_offset_myr": 3.7270460237206713
+  },
+  "H_rcz_jitter": {
+   "r_p05": 0.04433655287864113,
+   "r_p50": 0.08087593060243865,
+   "r_p95": 0.11647200932074502,
+   "frac_r_pos": 1.0
+  },
+  "periodogram": {
+   "band": [
+    26.0,
+    29.0
+   ],
+   "band_max_power": 0.9304418922184282,
+   "p_band_ar1": 0.7266136693165341,
+   "global_peak_period_myr": 15.84786053882734,
+   "global_peak_in_band": false,
+   "top_peaks": [
+    {
+     "period_myr": 15.84786053882734,
+     "power": 4.446413102784806
+    },
+    {
+     "period_myr": 35.460992907801554,
+     "power": 3.2024400117027216
+    },
+    {
+     "period_myr": 13.140604467805588,
+     "power": 3.0907645673713406
+    },
+    {
+     "period_myr": 23.696682464455083,
+     "power": 2.825569611530913
+    },
+    {
+     "period_myr": 41.66666666666681,
+     "power": 2.294752597160275
+    },
+    {
+     "period_myr": 12.578616352201326,
+     "power": 1.950976872667887
+    },
+    {
+     "period_myr": 17.064846416382338,
+     "power": 1.35940574141097
+    },
+    {
+     "period_myr": 11.441647597254068,
+     "power": 1.1186679183089052
+    }
+   ]
+  },
+  "event_test": {
+   "n_peaks": 7,
+   "hits": 2,
+   "p0": 0.21818181818181817,
+   "p_binom": 0.47267831885631845,
+   "peak_ages_ma": [
+    237.0,
+    201.4,
+    161.5,
+    143.1,
+    113.2,
+    66.0,
+    48.07
+   ],
+   "peak_offsets_myr": [
+    10.0,
+    1.9000000000000057,
+    10.5,
+    1.4000000000000057,
+    3.799999999999997,
+    4.0,
+    13.57
+   ]
+  },
+  "duration_artifact": {
+   "n": 38,
+   "r": -0.15097585566939467,
+   "lag1": 0.09837068138395437,
+   "p_ar1": 0.8129593520323983,
+   "p_phase": 0.6778161091945403,
+   "fit_amplitude": 1.3295639776127928,
+   "fit_tmax_ma": 16.21501010893322,
+   "phase_offset_myr": 9.215010108933221
+  },
+  "decision": "DATA_LIMITED"
+ },
+ "nonmammal": {
+  "window": [
+   2.5,
+   300.0
+  ],
+  "n_bins": 38,
+  "window_bins": [
+   "Gzhelian",
+   "Asselian",
+   "Sakmarian",
+   "Capitanian",
+   "Ladinian",
+   "Carnian",
+   "Norian",
+   "Rhaetian",
+   "Hettangian",
+   "Callovian",
+   "Oxfordian",
+   "Kimmeridgian",
+   "Tithonian",
+   "Berriasian",
+   "Valanginian",
+   "Hauterivian",
+   "Barremian",
+   "Aptian",
+   "Albian",
+   "Santonian",
+   "Campanian",
+   "Maastrichtian",
+   "Danian",
+   "Selandian",
+   "Thanetian",
+   "Ypresian",
+   "Lutetian",
+   "Bartonian",
+   "Priabonian",
+   "Rupelian",
+   "Chattian",
+   "Aquitanian",
+   "Burdigalian",
+   "Langhian",
+   "Serravallian",
+   "Tortonian",
+   "Messinian",
+   "Zanclean"
+  ],
+  "sanity": {
+   "checks": {
+    "maastrichtian_top_quartile": true,
+    "enough_bins": false
+   },
+   "passed": false
+  },
+  "H_rcz": {
+   "n": 38,
+   "r": 0.09105905389007701,
+   "lag1": -0.10601201803497312,
+   "p_ar1": 0.2829858507074646,
+   "p_phase": 0.23143842807859608,
+   "fit_amplitude": 0.12109995688633932,
+   "fit_tmax_ma": 3.75589068306401,
+   "phase_offset_myr": 3.2441093169359903
+  },
+  "leave_events_out": {
+   "n": 30,
+   "r": -0.21435448473389468,
+   "lag1": -0.22219804910995636,
+   "p_ar1": 0.887705614719264,
+   "p_phase": 0.7885105744712765,
+   "fit_amplitude": 0.2988036588046855,
+   "fit_tmax_ma": 23.598753391651236,
+   "phase_offset_myr": 10.901246608348764,
+   "dropped_bins": [
+    "Capitanian",
+    "Carnian",
+    "Norian",
+    "Rhaetian",
+    "Tithonian",
+    "Maastrichtian",
+    "Priabonian",
+    "Tortonian"
+   ]
+  },
+  "H_mb2014": {
+   "n": 38,
+   "r": 0.09312290773381098,
+   "lag1": -0.10601201803497312,
+   "p_ar1": 0.2776361181940903,
+   "p_phase": 0.21158942052897356,
+   "fit_amplitude": 0.11910798508029011,
+   "fit_tmax_ma": 6.813091343630941,
+   "phase_offset_myr": 2.6869086563690594
+  },
+  "decision": "DATA_LIMITED"
+ },
+ "window_260": {
+  "window": [
+   2.5,
+   260.0
+  ],
+  "n_bins": 35,
+  "window_bins": [
+   "Capitanian",
+   "Ladinian",
+   "Carnian",
+   "Norian",
+   "Rhaetian",
+   "Hettangian",
+   "Callovian",
+   "Oxfordian",
+   "Kimmeridgian",
+   "Tithonian",
+   "Berriasian",
+   "Valanginian",
+   "Hauterivian",
+   "Barremian",
+   "Aptian",
+   "Albian",
+   "Santonian",
+   "Campanian",
+   "Maastrichtian",
+   "Danian",
+   "Selandian",
+   "Thanetian",
+   "Ypresian",
+   "Lutetian",
+   "Bartonian",
+   "Priabonian",
+   "Rupelian",
+   "Chattian",
+   "Aquitanian",
+   "Burdigalian",
+   "Langhian",
+   "Serravallian",
+   "Tortonian",
+   "Messinian",
+   "Zanclean"
+  ],
+  "sanity": {
+   "checks": {
+    "maastrichtian_top_quartile": true,
+    "enough_bins": false
+   },
+   "passed": false
+  },
+  "H_rcz": {
+   "n": 35,
+   "r": 0.03178646394242686,
+   "lag1": -0.10421190429173026,
+   "p_ar1": 0.4333783310834458,
+   "p_phase": 0.42942852857357133,
+   "fit_amplitude": 0.16380880336263653,
+   "fit_tmax_ma": 0.6580366892812809,
+   "phase_offset_myr": 6.341963310718719
+  },
+  "leave_events_out": {
+   "n": 27,
+   "r": -0.20661820104551173,
+   "lag1": -0.20259310188427251,
+   "p_ar1": 0.8551572421378931,
+   "p_phase": 0.7346632668366582,
+   "fit_amplitude": 0.36523638158759836,
+   "fit_tmax_ma": 24.232810050508874,
+   "phase_offset_myr": 10.267189949491126,
+   "dropped_bins": [
+    "Capitanian",
+    "Carnian",
+    "Norian",
+    "Rhaetian",
+    "Tithonian",
+    "Maastrichtian",
+    "Priabonian",
+    "Tortonian"
+   ]
+  },
+  "H_mb2014": {
+   "n": 35,
+   "r": -0.006204599866771399,
+   "lag1": -0.10421190429173026,
+   "p_ar1": 0.5093745312734363,
+   "p_phase": 0.5185740712964352,
+   "fit_amplitude": 0.15374551152725005,
+   "fit_tmax_ma": 2.2679924261806312,
+   "phase_offset_myr": 7.232007573819368
+  },
+  "decision": "DATA_LIMITED"
+ },
+ "foote_q": {
+  "window": [
+   2.5,
+   300.0
+  ],
+  "n_bins": 57,
+  "window_bins": [
+   "Gzhelian",
+   "Asselian",
+   "Sakmarian",
+   "Artinskian",
+   "Kungurian",
+   "Roadian",
+   "Wordian",
+   "Capitanian",
+   "Wuchiapingian",
+   "Changhsingian",
+   "Induan",
+   "Olenekian",
+   "Anisian",
+   "Ladinian",
+   "Carnian",
+   "Norian",
+   "Rhaetian",
+   "Hettangian",
+   "Sinemurian",
+   "Pliensbachian",
+   "Toarcian",
+   "Aalenian",
+   "Bajocian",
+   "Bathonian",
+   "Callovian",
+   "Oxfordian",
+   "Kimmeridgian",
+   "Tithonian",
+   "Berriasian",
+   "Valanginian",
+   "Hauterivian",
+   "Barremian",
+   "Aptian",
+   "Albian",
+   "Cenomanian",
+   "Turonian",
+   "Coniacian",
+   "Santonian",
+   "Campanian",
+   "Maastrichtian",
+   "Danian",
+   "Selandian",
+   "Thanetian",
+   "Ypresian",
+   "Lutetian",
+   "Bartonian",
+   "Priabonian",
+   "Rupelian",
+   "Chattian",
+   "Aquitanian",
+   "Burdigalian",
+   "Langhian",
+   "Serravallian",
+   "Tortonian",
+   "Messinian",
+   "Zanclean",
+   "Piacenzian"
+  ],
+  "sanity": {
+   "checks": {
+    "maastrichtian_top_quartile": true,
+    "enough_bins": true
+   },
+   "passed": true
+  },
+  "H_rcz": {
+   "n": 57,
+   "r": 0.0067238111778443795,
+   "lag1": -0.02363729985578572,
+   "p_ar1": 0.4786760661966902,
+   "p_phase": 0.4694265286735663,
+   "fit_amplitude": 0.04643674176127922,
+   "fit_tmax_ma": 0.04538225683265993,
+   "phase_offset_myr": 6.95461774316734
+  },
+  "leave_events_out": {
+   "n": 48,
+   "r": -0.15214768772175943,
+   "lag1": -0.015064358893575807,
+   "p_ar1": 0.848357582120894,
+   "p_phase": 0.7173641317934103,
+   "fit_amplitude": 0.17718550403599964,
+   "fit_tmax_ma": 24.48773320310824,
+   "phase_offset_myr": 10.012266796891758,
+   "dropped_bins": [
+    "Capitanian",
+    "Changhsingian",
+    "Carnian",
+    "Norian",
+    "Rhaetian",
+    "Tithonian",
+    "Maastrichtian",
+    "Priabonian",
+    "Tortonian"
+   ]
+  },
+  "H_mb2014": {
+   "n": 57,
+   "r": 0.06361167661669942,
+   "lag1": -0.02363729985578572,
+   "p_ar1": 0.32103394830258486,
+   "p_phase": 0.15249237538123095,
+   "fit_amplitude": 0.04680794927590652,
+   "fit_tmax_ma": 7.469017735363559,
+   "phase_offset_myr": 2.0309822646364406
+  },
+  "decision": "NOT_SUPPORTED"
+ },
+ "decision": "DATA_LIMITED"
+}

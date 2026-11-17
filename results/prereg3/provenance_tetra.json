@@ -1,0 +1,39 @@
+{
+ "started_utc": "2026-11-17T20:30:59Z",
+ "pbdb": {
+  "tetra_nonmammal": {
+   "url": "https://paleobiodb.org/data1.2/occs/list.csv?base_name=Tetrapoda%5EMammalia&envtype=terrestrial&idreso=genus&idqual=genus_certain&pres=regular&show=class",
+   "status": "downloaded",
+   "bytes": 8264605,
+   "md5": "0fb5fd960989302e6b36c625bec4168e",
+   "file_mtime_utc": "2026-11-17T20:31:06.160278+00:00"
+  },
+  "tetra_mammalia": {
+   "url": "https://paleobiodb.org/data1.2/occs/list.csv?base_name=Mammalia&envtype=terrestrial&idreso=genus&idqual=genus_certain&pres=regular&show=class",
+   "status": "downloaded",
+   "bytes": 19196665,
+   "md5": "3f48443db5ff4d68f6203ecdb28a3453",
+   "file_mtime_utc": "2026-11-17T20:31:20.716276+00:00"
+  }
+ },
+ "queries": {
+  "tetra_nonmammal": "https://paleobiodb.org/data1.2/occs/list.csv?base_name=Tetrapoda%5EMammalia&envtype=terrestrial&idreso=genus&idqual=genus_certain&pres=regular&show=class",
+  "tetra_mammalia": "https://paleobiodb.org/data1.2/occs/list.csv?base_name=Mammalia&envtype=terrestrial&idreso=genus&idqual=genus_certain&pres=regular&show=class"
+ },
+ "n_surrogates": 20000,
+ "seed": 20261119,
+ "amendment": "PREREG-3-AMENDMENT-1.md: envtype=terr (rejected by the PBDB API) replaced by envtype=terrestrial ('Any terrestrial environment') before any tetrapod data were downloaded",
+ "parse_all": {
+  "rows": 127583,
+  "assigned": 89324,
+  "no_genus": 0,
+  "no_bin": 38259
+ },
+ "parse_nonmammal": {
+  "rows": 37678,
+  "assigned": 29671,
+  "no_genus": 0,
+  "no_bin": 8007
+ },
+ "finished_utc": "2026-11-17T20:31:27Z"
+}
